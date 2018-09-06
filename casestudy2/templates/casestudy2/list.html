@@ -1,0 +1,9 @@
+{% if entity_list %}
+    <ul>
+    {% for entity in entity_list %}
+        <li>{{ entity.entity_name }} - {{ entity.entity_email }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Entities are available.</p>
+{% endif %}

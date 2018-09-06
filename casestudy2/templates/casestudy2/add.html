@@ -1,0 +1,6 @@
+<form action="{% url 'casestudy2:addentity' %}" method="post">
+{% csrf_token %}
+    <input type="text" name="entity_name" id="entity_name" >
+	<input type="text" name="entity_email" id="entity_email" >
+<input type="submit" value="addentity">
+</form>
